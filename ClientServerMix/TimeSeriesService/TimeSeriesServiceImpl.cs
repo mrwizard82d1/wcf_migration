@@ -8,7 +8,7 @@ namespace TimeSeriesService
     {
         public TimeSeriesBase New(IEnumerable<IDataPoint> dataPoints)
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }

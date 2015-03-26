@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesService", "TimeSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeries", "TimeSeries\TimeSeries.csproj", "{2260748A-7054-49F1-A9E8-6DFE029F82C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesService.Tests", "TimeSeriesService.Tests\TimeSeriesService.Tests.csproj", "{C97C4EB5-09D1-4DDD-AD3C-C76BB5C71B28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{2260748A-7054-49F1-A9E8-6DFE029F82C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2260748A-7054-49F1-A9E8-6DFE029F82C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2260748A-7054-49F1-A9E8-6DFE029F82C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C97C4EB5-09D1-4DDD-AD3C-C76BB5C71B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97C4EB5-09D1-4DDD-AD3C-C76BB5C71B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97C4EB5-09D1-4DDD-AD3C-C76BB5C71B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97C4EB5-09D1-4DDD-AD3C-C76BB5C71B28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
