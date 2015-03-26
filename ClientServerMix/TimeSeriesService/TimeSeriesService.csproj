@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="ITimeSeriesService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimesSeriesServiceImpl.cs" />
+    <Compile Include="TimeSeriesServiceImpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
