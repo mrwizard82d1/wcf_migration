@@ -14,6 +14,12 @@ namespace TimeSeries
             {
                 case 1:
                     return new IrregularTimeSeries(dataPoints);
+
+                case 2:
+                    return new RegularTimeSeries(dataPoints);
+
+                case 3:
+                    return new SetPointTimeSeries(dataPoints);
             }
             return null;
         }
