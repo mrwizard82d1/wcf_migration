@@ -8,7 +8,7 @@ namespace TimeSeriesService
     {
         public TimeSeriesBase New(IEnumerable<IDataPoint> dataPoints)
         {
-            return null;
+            return ((TimeSeriesBase) TimeSeriesBase.Create(dataPoints));
         }
     }
 }
