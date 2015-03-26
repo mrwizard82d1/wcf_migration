@@ -44,6 +44,8 @@
     <Compile Include="IrregularTimeSeries.cs" />
     <Compile Include="ITimeSeries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegularTimeSeries.cs" />
+    <Compile Include="SetPointTimeSeries.cs" />
     <Compile Include="TimeSeriesBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
