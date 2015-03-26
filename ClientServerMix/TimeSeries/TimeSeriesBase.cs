@@ -7,7 +7,7 @@ namespace TimeSeries
     [DataContract]
     public class TimeSeriesBase : ITimeSeries
     {
-        public static ITimeSeries Create(IEnumerable<IDataPoint> dataPoints)
+        public static ITimeSeries Create(IList<IDataPoint> dataPoints)
         {
             // A stupid implementation
             switch (dataPoints.Count())
