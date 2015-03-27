@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.cjl-magistri.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.cjl-magistri.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.cjl-magistri.com/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/TimeSeriesService?xsd=xsd0" namespace="http://www.cjl-magistri.com" />
+      <xsd:import schemaLocation="http://localhost:8733/TimeSeriesService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/TimeSeriesService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TimeSeries" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITimeSeriesService_New_InputMessage">
+    <wsdl:part name="parameters" element="tns:New" />
+  </wsdl:message>
+  <wsdl:message name="ITimeSeriesService_New_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITimeSeriesService">
+    <wsdl:operation name="New">
+      <wsdl:input wsaw:Action="http://www.cjl-magistri.com/ITimeSeriesService/New" message="tns:ITimeSeriesService_New_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.cjl-magistri.com/ITimeSeriesService/NewResponse" message="tns:ITimeSeriesService_New_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

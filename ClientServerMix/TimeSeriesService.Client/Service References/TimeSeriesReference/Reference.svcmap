@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="77fe02d9-30fa-49e3-a414-0acac69313e4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/TimeSeriesService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TimeSeriesService.xsd" MetadataType="Schema" ID="f3640ce2-4192-441b-b972-8e247541f5f5" SourceId="1" SourceUrl="http://localhost:8733/TimeSeriesService?xsd=xsd1" />
+    <MetadataFile FileName="TimeSeriesServiceImpl.wsdl" MetadataType="Wsdl" ID="d3e6611f-56cb-4ce1-a20d-c4125b4b1bab" SourceId="1" SourceUrl="http://localhost:8733/TimeSeriesService?wsdl" />
+    <MetadataFile FileName="TimeSeriesService.wsdl" MetadataType="Wsdl" ID="d4d41d0f-9ee4-42dd-922b-3762c25a0deb" SourceId="1" SourceUrl="http://localhost:8733/TimeSeriesService?wsdl=wsdl0" />
+    <MetadataFile FileName="TimeSeriesService1.xsd" MetadataType="Schema" ID="0e913d95-1186-4a99-b8ee-be81ed2abc99" SourceId="1" SourceUrl="http://localhost:8733/TimeSeriesService?xsd=xsd0" />
+    <MetadataFile FileName="TimeSeriesService2.xsd" MetadataType="Schema" ID="e2c3f2bd-ca12-4a54-ac83-ef72a79ea127" SourceId="1" SourceUrl="http://localhost:8733/TimeSeriesService?xsd=xsd2" />
+    <MetadataFile FileName="TimeSeriesService.disco" MetadataType="Disco" ID="58edb9f8-a26b-48fd-b196-8faacee13e54" SourceId="1" SourceUrl="http://localhost:8733/TimeSeriesService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

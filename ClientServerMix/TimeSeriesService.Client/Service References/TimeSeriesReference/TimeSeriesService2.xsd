@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TimeSeries" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TimeSeries" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDataPoint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataPoint" nillable="true" type="tns:DataPoint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataPoint" nillable="true" type="tns:ArrayOfDataPoint" />
+  <xs:complexType name="DataPoint">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="DataPoint" nillable="true" type="tns:DataPoint" />
+  <xs:complexType name="TimeSeriesBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="TimeSeriesBase" nillable="true" type="tns:TimeSeriesBase" />
+  <xs:complexType name="IrregularTimeSeries">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TimeSeriesBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IrregularTimeSeries" nillable="true" type="tns:IrregularTimeSeries" />
+  <xs:complexType name="SetPointTimeSeries">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TimeSeriesBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetPointTimeSeries" nillable="true" type="tns:SetPointTimeSeries" />
+  <xs:complexType name="RegularTimeSeries">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TimeSeriesBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RegularTimeSeries" nillable="true" type="tns:RegularTimeSeries" />
+</xs:schema>
