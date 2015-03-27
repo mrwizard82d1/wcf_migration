@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using TimeSeries;
@@ -12,9 +11,9 @@ namespace TimeSeriesService.Tests
         [TestMethod]
         public void New_OneDataPoint_ReturnsIrregularTimeSeries()
         {
-            var oneDataPoint = new List<IDataPoint>
+            var oneDataPoint = new List<DataPoint>
             {
-                new Mock<IDataPoint>().Object
+                new Mock<DataPoint>().Object
             };
             var cut = new TimeSeriesServiceImpl();
 
@@ -26,10 +25,10 @@ namespace TimeSeriesService.Tests
         [TestMethod]
         public void New_TwoDataPoints_ReturnsRegularTimeSeries()
         {
-            var twoDataPoints = new List<IDataPoint>
+            var twoDataPoints = new List<DataPoint>
             {
-                new Mock<IDataPoint>().Object,
-                new Mock<IDataPoint>().Object
+                new Mock<DataPoint>().Object,
+                new Mock<DataPoint>().Object
             };
             var cut = new TimeSeriesServiceImpl();
 
@@ -41,11 +40,11 @@ namespace TimeSeriesService.Tests
         [TestMethod]
         public void New_ThreeDataPoints_ReturnsRegularTimeSeries()
         {
-            var threeDataPoints = new List<IDataPoint>
+            var threeDataPoints = new List<DataPoint>
             {
-                new Mock<IDataPoint>().Object,
-                new Mock<IDataPoint>().Object,
-                new Mock<IDataPoint>().Object
+                new Mock<DataPoint>().Object,
+                new Mock<DataPoint>().Object,
+                new Mock<DataPoint>().Object
             };
             var cut = new TimeSeriesServiceImpl();
 

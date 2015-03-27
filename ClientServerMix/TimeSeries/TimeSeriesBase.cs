@@ -5,9 +5,12 @@ using System.Runtime.Serialization;
 namespace TimeSeries
 {
     [DataContract]
+    [KnownType(typeof(IrregularTimeSeries))]
+    [KnownType(typeof(RegularTimeSeries))]
+    [KnownType(typeof(SetPointTimeSeries))]
     public class TimeSeriesBase : ITimeSeries
     {
-        public static ITimeSeries Create(IList<IDataPoint> dataPoints)
+        public static ITimeSeries Create(IList<DataPoint> dataPoints)
         {
             // A stupid implementation
             switch (dataPoints.Count())
