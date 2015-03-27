@@ -5,9 +5,9 @@ namespace TimeSeries
     class SetPointTimeSeries : TimeSeriesBase
     {
         // ReSharper disable once NotAccessedField.Local
-        private IList<IDataPoint> _settings;
+        private IList<DataPoint> _settings;
 
-        public SetPointTimeSeries(IList<IDataPoint> dataPoints)
+        public SetPointTimeSeries(IList<DataPoint> dataPoints)
         {
             _settings = dataPoints;
         }
