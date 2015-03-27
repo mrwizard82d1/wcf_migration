@@ -8,6 +8,6 @@ namespace TimeSeriesService
     public interface ITimeSeriesService
     {
         [OperationContract]
-        TimeSeriesBase New(IList<IDataPoint> dataPoints);
+        TimeSeriesBase New(IList<DataPoint> dataPoints);
     }
 }
